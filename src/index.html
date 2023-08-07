@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="../dist/output.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Newsletter sign-up form with success message | Frontend Mentor</title>
+</head>
+<body class="bg-[#37384e] flex flex-col justify-center items-center h-screen font-Roboto">
+    <main id="main-container" class="container bg-[#fff] mx-auto h-screen w-[375px] xl:flex xl:flex-row-reverse xl:w-1/2 xl:h-auto xl:rounded-[30px] ">
+      <!-- section main image -->
+      <section class="w-full mb-12 xl:w-1/2 xl:pt-10">
+        <div class="h-[284px] w-[375px] bg-mobile-img xl:bg-desktop-img xl:h-[593px] xl:w-[400px]"></div>
+      </section>
+      <!-- end section main image -->
+
+      <!-- start form section -->
+      <section class="w-full xl:w-1/2 px-8 xl:px-16 xl:justify-center xl:flex xl:flex-col">
+        <h1 class=" font-bold text-5xl pb-6">Stay updated!</h1>
+        <p class="sub-title pb-6 text-sm">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li class="flex xl:text-sm">
+            <img class="pr-5 pb-4" src="../assets/images/icon-list.svg">
+            <span>Product discovery and building what matters</span>
+          </li>
+          <li class="flex xl:text-sm">
+            <img class="pr-5 pb-4" src="../assets/images/icon-list.svg">
+            <span>Measuring to ensure updates are a success</span>
+          </li>
+          <li class="flex pb-2 xl:text-sm">
+            <img class="pr-5" src="../assets/images/icon-list.svg">
+            <span>And much more!</span>
+          </li>
+        </ul>
+
+        <form id="form" class="mt-10">
+          <div class="form-control mb-6">
+            <div class="flex justify-between">
+              <label class="block text-xs font-bold mb-2" for="email">Email address</label>
+              <label id="errorMsg" class="hidden text-red-500 text-xs font-bold mb-2" for="email">Valid email required</label>
+            </div>
+            <input type="email" id="email" name="email" class="input-div w-full px-4 py-3 border rounded-md" placeholder="email@company.com">
+          </div>
+          <div class="mb-11 xl:mb-0">
+            <button type="submit" class="w-full font-bold p-4 text-white bg-[#242742] rounded-md 
+              focus:outline-none hover:bg-gradient-to-r from-[#FF5A68] to-[#ff6257]"
+              >Subscribe to monthly newsletter</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- end form section -->
+
+    <!-- start after subscript section / thank you section -->
+    <section>
+      <div id="thanks-con" class="hidden thanks-container xl:w-2/5 xl:h-fit xl:rounded-[30px] flex-col  justify-center items-baseline h-screen mx-auto p-14 w-[375px] bg-[#fff] ">
+        <img class="pb-9" src="../assets/images/icon-success.svg" alt="">
+        <h1 class=" font-bold text-5xl pb-6">Thanks for subscribing!</h1>
+        <p class="pb-9">A confirmation email has been sent to <b>ash@loremcompany.com.</b> 
+          Please open it and click the button inside to confirm your subscription.</p>
+        <button type="submit" class="w-full font-bold p-4 text-white bg-[#242742] rounded-md 
+        focus:outline-none hover:bg-gradient-to-r from-[#FF5A68] to-[#ff6257]" onclick="this.parentNode.parentNode.remove(); return false;"
+        >Dismiss message</button>
+      </div>
+    </section>
+    <!-- end thank you section -->
+
+    <script src="script.js"></script>
+</body>
+</html>
