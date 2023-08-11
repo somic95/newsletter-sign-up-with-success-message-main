@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="../dist/output.css">
+  <link rel="stylesheet" href="output.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Newsletter sign-up form with success message | Frontend Mentor</title>
@@ -62,8 +62,8 @@
         <h1 class=" font-bold text-5xl pb-6">Thanks for subscribing!</h1>
         <p class="pb-9">A confirmation email has been sent to <b>ash@loremcompany.com.</b> 
           Please open it and click the button inside to confirm your subscription.</p>
-        <button type="submit" class="w-full font-bold p-4 text-white bg-[#242742] rounded-md 
-        focus:outline-none hover:bg-gradient-to-r from-[#FF5A68] to-[#ff6257]" onclick="this.parentNode.parentNode.remove(); return false;"
+        <button onclick="window.history.go()" type="submit" class="w-full font-bold p-4 text-white bg-[#242742] rounded-md 
+        focus:outline-none hover:bg-gradient-to-r from-[#FF5A68] to-[#ff6257]"
         >Dismiss message</button>
       </div>
     </section>

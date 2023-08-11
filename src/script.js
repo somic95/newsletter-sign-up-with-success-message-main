@@ -18,7 +18,9 @@ form.addEventListener('submit',function(e){
     } else {
         mainContainer.style.display = 'none';
         thanksContainer.style.display = 'block';
+        
     }
 })
+
 
 
