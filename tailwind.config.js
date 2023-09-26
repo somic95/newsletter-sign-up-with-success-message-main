@@ -7,8 +7,8 @@ module.exports = {
         Roboto: ['Roboto', 'sans-serif'],
       },
       backgroundImage: {
-        'mobile-img': "url('../assets/images/illustration-sign-up-mobile.svg')",
-        'desktop-img': "url('../assets/images/illustration-sign-up-desktop.svg')"
+        'mobile-img': "url('./images/illustration-sign-up-mobile.svg')",
+        'desktop-img': "url('./images/illustration-sign-up-desktop.svg')"
       },
   },
   plugins: [],
